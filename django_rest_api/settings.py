@@ -113,6 +113,10 @@ if 'CLIENT_ORIGIN_DEV' in os.environ:
 
 CORS_ALLOW_CREDENTIALS = True
 
+CORS_ORIGIN_WHITELIST = [
+    'https://moments-ci-react.herokuapp.com',
+]
+
 ROOT_URLCONF = 'django_rest_api.urls'
 
 TEMPLATES = [
